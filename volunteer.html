@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on Land - Volunteer</title>
+    <link rel="stylesheet" href="css/template_style.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    <style>
+      .programs-marquee.marquee-container {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 1px solid #ddd;
+        margin: 20px 0;
+        padding: 10px 0;
+      }
+
+      .programs-marquee:hover .marquee-wrapper {
+        animation-play-state: paused;
+      }
+
+      .programs-content {
+        display: inline-block;
+      }
+
+      .program-card {
+        display: inline-block;
+        width: 250px; 
+        height: 350px; 
+        vertical-align: top;
+        margin-right: 20px;
+        box-sizing: border-box;
+        overflow: hidden; 
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .program-card img {
+        width: 100%;
+        height: 150px; 
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+     
+      .program-card h3 {
+        margin: 5px 0;
+        font-size: 1.1rem;
+      }
+
+      .program-card p {
+        font-size: 0.9rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+      }
+
+      @keyframes marqueePrograms {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .programs-marquee .marquee-wrapper {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marqueePrograms 15s linear infinite;
+      }
+
+      .volunteer-month {
+        margin-top: 40px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <header id="header">
+        <h1>
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50">
+          Life on Land
+        </h1>
+        <nav id="nav">
+          <a href="home.html">Home</a>
+          <a href="content.html">Content</a>
+          <a href="volunteer.html" class="active">Volunteer</a>
+          <a href="table.html">Table</a>
+          <a href="userProfile.html">User Profile</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </header>
+
+      <div id="content">
+        <main class="volunteer-section">
+          <h2>Upcoming Volunteer Activities</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Volunteer Slots</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tree Planting</td>
+          <td>March 15, 2025</td>
+          <td>Colombo Park</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Beach Cleanup</td>
+          <td>March 20, 2025</td>
+          <td>Mount Lavinia Beach</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Wildlife Rescue</td>
+          <td>March 25, 2025</td>
+          <td>Wilpattu National Park</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <section class="reviews-section" style="margin-top: 30px">
+    </section>
+
+  </main>
+</div>
+
+          <div class="programs-marquee marquee-container">
+            <div class="marquee-wrapper">
+          
+              <div class="programs-content">
+                
+                <div class="program-card">
+                  <img
+                    src="images/TreePlanting.jpeg"
+                    alt="Community Tree Planting"
+                 >
+                  <h3>Tree Planting</h3>
+                  <p>
+                    Join our community tree planting initiative to help reforest
+                    urban areas.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    This event takes place every Saturday at the community park.
+                    Tools and saplings are provided for free.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img src="images/WildlifeRescue.jpeg" alt="Wildlife Rescue">
+                  <h3>Wildlife Rescue</h3>
+                  <p>
+                    Assist in the rescue and rehabilitation of local wildlife.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Wildlife rescue operations are held monthly. Volunteers help
+                    in animal first aid and habitat restoration.
+                  </p>
+                </div>
+              
+                <div class="program-card">
+                  <img src="images/BeachCleanup.jpeg" alt="Beach Cleanup">
+                  <h3>Beach Cleanup</h3>
+                  <p>Participate in cleaning and restoring coastal habitats.</p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Cleanups are organized seasonally. Gloves, bags, and
+                    refreshments are provided to volunteers.
+                  </p>
+                </div>
+          
+                <div class="program-card">
+                  <img src="images/EcoWorkshops.jpeg" alt="Eco Workshops">
+                  <h3>Eco Workshops</h3>
+                  <p>
+                    Engage in workshops and seminars on sustainable practices.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Workshops cover topics like recycling, composting, and
+                    renewable energy. Open to all ages.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img src="images/UrbanGardening.jpeg" alt="Urban Gardening">
+                  <h3>Urban Gardening</h3>
+                  <p>
+                    Help transform unused spaces into thriving community
+                    gardens.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Volunteers can adopt small plots, learn about organic
+                    methods, and share produce with neighbors.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img
+                    src="images/ForestRestoration.jpeg"
+                    alt="Forest Restoration"
+                 >
+                  <h3>Forest Restoration</h3>
+                  <p>
+                    Replant native trees and remove invasive species in
+                    protected forests.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Seasonal events require moderate hiking. Training in
+                    identifying invasive species is provided.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img
+                    src="images/LocalAnimalShelter.jpeg"
+                    alt="Local Animal Shelter"
+                 >
+                  <h3>Local Animal Shelter</h3>
+                  <p>
+                    Support staff by feeding, grooming, and socializing with
+                    sheltered animals.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Volunteer hours vary daily. Tasks also include cleaning
+                    kennels and assisting in adoption events.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="programs-content">
+                
+                <div class="program-card">
+                  <img
+                    src="images/TreePlanting.jpeg"
+                    alt="Community Tree Planting"
+                 >
+                  <h3>Tree Planting</h3>
+                  <p>
+                    Join our community tree planting initiative to help reforest
+                    urban areas.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    This event takes place every Saturday at the community park.
+                    Tools and saplings are provided for free.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img src="images/WildlifeRescue.jpeg" alt="Wildlife Rescue">
+                  <h3>Wildlife Rescue</h3>
+                  <p>
+                    Assist in the rescue and rehabilitation of local wildlife.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Wildlife rescue operations are held monthly. Volunteers help
+                    in animal first aid and habitat restoration.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img src="images/BeachCleanup.jpeg" alt="Beach Cleanup">
+                  <h3>Beach Cleanup</h3>
+                  <p>Participate in cleaning and restoring coastal habitats.</p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Cleanups are organized seasonally. Gloves, bags, and
+                    refreshments are provided to volunteers.
+                  </p>
+                </div>
+              
+                <div class="program-card">
+                  <img src="images/EcoWorkshops.jpeg" alt="Eco Workshops">
+                  <h3>Eco Workshops</h3>
+                  <p>
+                    Engage in workshops and seminars on sustainable practices.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Workshops cover topics like recycling, composting, and
+                    renewable energy. Open to all ages.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img src="images/UrbanGardening.jpeg" alt="Urban Gardening">
+                  <h3>Urban Gardening</h3>
+                  <p>
+                    Help transform unused spaces into thriving community
+                    gardens.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Volunteers can adopt small plots, learn about organic
+                    methods, and share produce with neighbors.
+                  </p>
+                </div>
+                
+                <div class="program-card">
+                  <img
+                    src="images/ForestRestoration.jpeg"
+                    alt="Forest Restoration"
+                 >
+                  <h3>Forest Restoration</h3>
+                  <p>
+                    Replant native trees and remove invasive species in
+                    protected forests.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Seasonal events require moderate hiking. Training in
+                    identifying invasive species is provided.
+                  </p>
+                </div>
+              
+                <div class="program-card">
+                  <img
+                    src="images/LocalAnimalShelter.jpeg"
+                    alt="Local Animal Shelter"
+                 >
+                  <h3>Local Animal Shelter</h3>
+                  <p>
+                    Support staff by feeding, grooming, and socializing with
+                    sheltered animals.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                  <p class="extra-info" style="display: none">
+                    Volunteer hours vary daily. Tasks also include cleaning
+                    kennels and assisting in adoption events.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="reviews-section" style="margin-top: 30px">
+            <div class="overall-rating">
+              Overall Rating: 9.4/10 - Exceptional (Based on 180 reviews)
+            </div>
+            <div class="review-card">
+              <h4>Excellent Experience</h4>
+              <p>
+                "The tree planting event was very well organized. Loved the
+                interactive sessions!"
+              </p>
+              <p>- Alex, 12/02/2025</p>
+            </div>
+            <div class="review-card">
+              <h4>Very Rewarding</h4>
+              <p>
+                "I felt truly connected to the community and nature. Highly
+                recommend volunteering!"
+              </p>
+              <p>- Jamie, 15/02/2025</p>
+            </div>
+            <div class="review-card">
+              <h4>Informative Workshops</h4>
+              <p>
+                "Eco Workshops gave me a new perspective on waste management.
+                Great speakers!"
+              </p>
+              <p>- Rebecca, 08/03/2025</p>
+            </div>
+            <div class="review-card">
+              <h4>Made New Friends</h4>
+              <p>
+                "Beach cleanup was not only good for the environment, but I also
+                met amazing people!"
+              </p>
+              <p>- Chris, 05/03/2025</p>
+            </div>
+          </section>
+
+          <section class="volunteer-month">
+            <h2>Volunteer of the Month</h2>
+            <div class="review-card">
+              <h4>Congratulations, Sarah!</h4>
+              <p>
+                Sarah has dedicated over 50 hours this month helping with
+                wildlife rescues and forest restoration projects. Her dedication
+                and positive spirit have inspired many new volunteers to join.
+              </p>
+              <p>- Life on Land Team</p>
+            </div>
+          </section>
+
+          <section class="feedback-form" style="margin-top: 40px">
+            <h2>Submit Your Feedback</h2>
+            <form onsubmit="alert('Form Submitted!'); return false;">
+              <textarea
+                name="feedback"
+                placeholder="Write your review here..."
+                maxlength="250"
+              ></textarea>
+              <div class="rating">
+                <button type="button">😊</button>
+                <button type="button">😐</button>
+                <button type="button">😞</button>
+                <button type="button">😃</button>
+                <button type="button">😍</button>
+              </div>
+              <button type="submit" class="submit-btn">Submit Feedback</button>
+              <button type="reset" class="cancel-btn">Cancel</button>
+            </form>
+          </section>
+        </main>
+      </div>
+
+      <footer id="footer">
+        <p>
+          &copy; Copyright 2025 |
+          <a id="link" href="pageEditor.html">Vivekka Pavanesan</a>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelectorAll(".learn-more").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var extraInfo = this.nextElementSibling;
+          if (extraInfo.style.display === "none") {
+            extraInfo.style.display = "block";
+            this.textContent = "Show Less";
+          } else {
+            extraInfo.style.display = "none";
+            this.textContent = "Learn More";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
