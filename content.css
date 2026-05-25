@@ -1,0 +1,34 @@
+.content-nav {
+  background-color: honeydew;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content-nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.content-section {
+  margin: 20px;
+}
+
+.content-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
