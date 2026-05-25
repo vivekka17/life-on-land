@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on Land - Land Conservation</title>
+    <link rel="stylesheet" href="css/template_style.css">
+    <link rel="stylesheet" href="css/content.css">
+    <style>
+      .content-section section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+      .content-section section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .content-section img {
+        transition: transform 0.5s ease;
+      }
+      .content-section img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="top"></div>
+    <div class="wrapper">
+      <header id="header">
+        <h1>
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50">
+          Life on Land
+        </h1>
+        <nav id="nav">
+          <a href="home.html">Home</a>
+          <a href="content.html" class="active">Content</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="table.html">Table</a>
+          <a href="userProfile.html">User Profile</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </header>
+
+      <div id="content">
+        <main class="content-section">
+          <div class="content-nav">
+            <a href="#introduction">Introduction</a>
+            <a href="#history">History</a>
+            <a href="#initiatives">Current Initiatives</a>
+            <a href="#future">Future Plans</a>
+            <a href="#challenges">Challenges</a>
+          </div>
+
+          <section id="introduction">
+            <h2>Land Conservation</h2>
+            <p>
+              Land which includes forests are vital to our planet’s health. They provide habitat for
+              countless species, help regulate the climate, and support the
+              livelihoods of millions worldwide. Land conservation aims to
+              protect, manage, and restore forest ecosystems for sustainable
+              development.
+            </p>
+            <img src="images/LushForest.jpeg" alt="Lush Forest">
+          </section>
+
+          <section id="history">
+            <h2>History of Land Conservation</h2>
+            <p>
+              The concept of land conservation dates back centuries as
+              communities recognized the critical role lands play in
+              sustaining life. Over time, challenges from industrialization led
+              to the establishment of protected areas and international
+              agreements. These historic steps laid the foundation for today’s
+              modern conservation efforts.
+            </p>
+            <img
+              src="images/HistoricalForest.jpeg"
+              alt="Historical Forest"
+           >
+          </section>
+
+          <section id="initiatives">
+            <h2>Current Conservation Initiatives</h2>
+            <p>
+              Today, initiatives focus on reforestation, sustainable logging,
+              and community-led forest management. Organizations work closely
+              with local communities to plant millions of trees, monitor forest
+              health, and enforce environmental laws that help reduce
+              deforestation and climate change impacts.
+            </p>
+            <img
+              src="images/ConservationEfforts.jpeg"
+              alt="Conservation Efforts"
+           >
+          </section>
+
+          <section id="future">
+            <h2>Future Plans and Innovations</h2>
+            <p>
+              The future of land conservation is rooted in innovation. New
+              technologies such as remote sensing, GIS mapping, and data
+              analytics are being integrated with traditional knowledge to
+              monitor and manage forests more effectively. Sustainable practices
+              and community engagement remain at the core of these efforts.
+            </p>
+            <img
+              src="images/FutureConservation.jpeg"
+              alt="Future Conservation"
+           >
+          </section>
+
+          <section id="challenges">
+            <h2>Challenges</h2>
+            <p>
+              Despite progress, land conservation faces significant
+              challenges: Illegal logging, climate change, and land-use
+              conflicts threaten these critical ecosystems. Overcoming these
+              obstacles requires global cooperation and innovative, sustainable
+              practices that balance environmental and economic needs.
+            </p>
+            <img
+              src="images/DeforestationChallenges.jpeg"
+              alt="Deforestation Challenges"
+           >
+          </section>
+        </main>
+      </div>
+
+      <a href="#top" class="go-to-top">Go to Top</a>
+
+      <footer id="footer">
+        <p>
+          &copy; Copyright 2025 |
+          <a id="link" href="pageEditor.html">Vivekka Pavanesan</a>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll(".content-section section")
+        .forEach((section) => {
+          observer.observe(section);
+        });
+    </script>
+  </body>
+</html>
